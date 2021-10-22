@@ -1,0 +1,39 @@
+/*
+	M2 BIHAR - BIG DATA - HADOOP
+	Année 2021/2022
+
+	MEMBRE DU GROUPE :
+	    -TOUMONTE ZATCHA AICHA
+	    -AKA CHRIS HYANN ARMAND
+  --
+  TP: PROGRAMME D ANALYSE DES VENTES
+  		ANALYSE PAR TYPE DE VENTE.
+  		TYPE 0 : PROFIT PAR REGION
+  		TYPE 1 : PROFIT PAR PAYS
+  		TYPE 2 : PROFIT PAR TYPE DE PRODUIT
+  		TYPE 3 : PROFIT ET QUANTITE VENDU PAR TYPE DE PRODUIT ET CANAL DE VENTE
+
+  --
+    Nom de la classe driver : Sales
+    Nom de la classe map : SalesMap
+    Nom de la classe reduce: SalesReduce
+    Fichier de donnée : sales_world.csv
+    Fichier jar : projet_vente_1.jar
+  --
+  INDICATION SUR LES TYPES D'ANALYSE
+  entreez : 0=> Pour afficher les profits de vente par region
+            1=> pour afficher les profits de vente par pays
+            2=> Pour afficher les profits de vente par type de produit
+            3=> Pour afficher les quantites de produits vendu et les profits de ventes par type de duits et chaine de vente
+  --
+  POUR EXECUTER LE PROGRAMME:
+    -COPIER LE FICHIER JAR ET LE FICHIER de donnee sur la machine virtuelle hadoop
+    -copier le fichier de donnee sur HDFS : hadoop fs -put sales_world.csv /
+
+    -executer la commande ( attention a remplacer type_analyse par la valeur correspondante) :
+        hadoop jar projet_vente_1.jar Sales /sales_world.csv /dossier_resultat type_analyse
+
+    -afficher le resultat de la commande
+        hadoop fs -ls /
+        hadoop fs -cat /dossier_resultat/*
+*/
